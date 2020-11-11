@@ -1,0 +1,4 @@
+﻿
+HelloWorld(){
+	MsgBox, "Hello World"
+}
