@@ -1,27 +1,31 @@
-﻿clickItem(x,y){
+﻿lclickItem(x,y){
 	Click, %x%,%y%
 }
 
-clickTransmutation(){
+rclickTransmutation(){
 
 }
 
-clickAlteration(){
+rclickAlteration(){
 
 }
 
-clickScouring(){
+rclickScouring(){
 
 }
 
-clickAlchemy(){
+rclickAlchemy(){
 
 }
 
-clickChaos(){
+rclickChaos(){
 
 }
 
-clickRegal(){
+rclickRegal(){
+
+}
+
+craftAction(x,y){
 
 }

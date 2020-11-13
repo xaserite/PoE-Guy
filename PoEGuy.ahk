@@ -5,6 +5,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #include src\crafter.ahk
 
-
-F10:: HelloWorld()
+;; Key Mappings
 ^Esc:: ExitApp
+^F10:: Reload
+F10:: HelloWorld()
+
+;; Main Routine
+HelloWorld()
+{
+	for window in ComObjCreate("Shell.Application").Windows
+		windows .= window.LocationName " :: " window.LocationURL "`n"
+		MsgBox % windows
+}

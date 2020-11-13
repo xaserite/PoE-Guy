@@ -1,5 +1,11 @@
-﻿#include item.ahk
-#include affix.ahk
-#include clickaction.ahk
-#include itemparser.ahk
+﻿#include src\item.ahk
+#include src\affix.ahk
+#include src\clickaction.ahk
+#include src\itemparser.ahk
 
+
+class Crafter
+{
+	target := new Item
+	result := new Item
+}
