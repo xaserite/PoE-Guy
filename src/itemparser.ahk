@@ -3,10 +3,15 @@
 
 parseItem()
 {
-	Send, ^C
 	; read the item string from clipboard
-	
-	; extract all affixes 
+	Send, ^c
+	sleep, 1
+	; extract all affixes
+	item = new Item
+	Loop, parse, clipboard, `n, `r 
+	{
+		MsgBox, %A_LoopField%
+	}
 	return item
 }
 
@@ -15,7 +20,12 @@ readTargetItem(filename)
 	target := new Item
 	Loop, read, filename
 	{
-	
+		
 	}
 	return target
+}
+
+isItemUnderCursorValid()
+{
+	
 }

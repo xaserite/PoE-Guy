@@ -8,4 +8,18 @@ class Crafter
 {
 	target := new Item
 	result := new Item
+	
+	loopAlteration()
+	{
+	}
+	
+	loopAlchemy()
+	{
+	}
+	
+	loopChaos()
+	{
+	
+	}
+	
 }
